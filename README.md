@@ -17,15 +17,20 @@ Download mpv
 brew install --cask mpv
 ```
 
-Cloning repo
+Cloning repo. Make sure its in your desired directory
 ```bash
 git clone https://github.com/Hanndot/ani-cli-macos.git
 ```
 
 ## Install
 
+Change directory to the project directory
 ```bash
 cd ani-cli-macos
+```
+
+Install using Makefile
+```bash
 sudo make
 ```
 
