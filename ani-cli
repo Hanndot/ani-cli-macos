@@ -281,10 +281,10 @@ open_episode () {
 		case $player_fn in
 
 			"mpv")
-				setsid -f $player_fn --http-header-fields="Referer: $embedded_video_url" "$video_url" >/dev/null 2>&1
+				nohup $player_fn --http-header-fields="Referer: $embedded_video_url" "$video_url" >/dev/null 2>&1
 				;;
 			"vlc")
-				setsid -f $player_fn --http-referrer="$embedded_video_url" --adaptive-use-access "$video_url" >/dev/null 2>&1
+				nohup $player_fn --http-referrer="$embedded_video_url" --adaptive-use-access "$video_url" >/dev/null 2>&1
 				;;
 		esac
 	else
