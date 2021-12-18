@@ -1,23 +1,31 @@
-# ani-cli
+# ani-cli for MacOS
 
-> Script working again :), thanks to the fork by
-> [Dink4n](https://github.com/Dink4n/ani-cli) for the alternative approach to
-> by pass the captcha on [gogoanime](https://gogoanime.vc)
-
-A cli to browse and watch anime.
+This is a fork of the original [ani-cli](https://github.com/pystardust/ani-cli).
+This fork intended to support macOS on the go and a full instalation guide.
 
 This tool scrapes the site [gogoanime](https://gogoanime.pe).
 
 ## Download
 
+Download homebrew
 ```bash
-git clone https://github.com/pystardust/ani-cli.git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Download mpv
+```bash
+brew install --cask mpv
+```
+
+Cloning repo
+```bash
+git clone https://github.com/Hanndot/ani-cli-macos.git
 ```
 
 ## Install
 
 ```bash
-cd ani-cli
+cd ani-cli-macos
 sudo make
 ```
 
@@ -58,7 +66,7 @@ This would open/download episodes 1 2 3 4 5 6
 * curl
 * sed
 * mpv
-* ffmpeg
+* brew
 
 ## Misc
 
